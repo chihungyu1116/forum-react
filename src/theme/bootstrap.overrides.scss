@@ -8,9 +8,18 @@
   padding-left: 50px;
 }
 
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-  color: #33e0ff;
-  background-color: transparent;
+.navbar-default {
+  background: rgba(70, 177, 215, 0.88);
+
+  .navbar-nav > li > a,
+  .navbar-nav > li > a:hover,
+  .navbar-nav > li > a:focus {
+    transition: background-color 0.2s;
+    color: #fff;
+  }
+
+  .navbar-nav > li > a:hover,
+  .navbar-nav > li > a:focus {
+    background-color: rgba(56, 124, 148, 0.69);
+  }
 }
